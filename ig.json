@@ -1,0 +1,205 @@
+{
+	"defaults": {
+		"PlanDefinition": {
+			"template-base": "ex.html"
+		},
+		"ActivityDefinition": {
+			"template-base": "ex.html"
+		},
+		"MedicationRequest": {
+			"template-base": "ex.html"
+		},
+		"StructureDefinition": {
+			"template-base": "sd.html",
+			"template-defns": "sd-definitions.html"
+		},
+		"CapabilityStatement": {
+			"template-format": "format.html",
+			"template-base": "base.html"
+		},
+		"Any": {
+			"template-format": "format.html",
+			"template-base": "base.html"
+		}
+	},
+	"source": "ig.xml",
+	"tool": "jekyll",
+	"resources": {
+				"ValueSet/rxnorm-ingredients": {
+						"base": "ValueSet-rxnorm-ingredients.html"
+				},
+
+				"CodeSystem/reference-type-code-list": {
+            "base": "CodeSystem-reference-type-code-list.html"
+        },
+				"ValueSet/reference-type-code-list": {
+						"base": "ValueSet-reference-type-code-list.html"
+				},
+
+        "CodeSystem/fever-neutropenia-risk": {
+            "base": "CodeSystem-fever-neutropenia-risk.html"
+        },
+				"ValueSet/fever-neutropenia-risk": {
+            "base": "ValueSet-fever-neutropenia-risk.html"
+        },
+
+        "CodeSystem/action-type": {
+            "base": "CodeSystem-action-type.html"
+        },
+				"ValueSet/action-type": {
+            "base": "ValueSet-action-type.html"
+        },
+
+        "CodeSystem/indication-classes": {
+            "base": "CodeSystem-indication-classes.html"
+        },
+				"ValueSet/indication-classes": {
+            "base": "ValueSet-indication-classes.html"
+        },
+
+				"CodeSystem/sections": {
+            "base": "CodeSystem-sections.html"
+        },
+				"ValueSet/sections": {
+            "base": "ValueSet-sections.html"
+        },
+
+				"CodeSystem/action-placeholder": {
+            "base": "CodeSystem-action-placeholder.html"
+        },
+				"ValueSet/action-placeholder": {
+            "base": "ValueSet-action-placeholder.html"
+        },
+
+				"CodeSystem/radiation-therapy-relation": {
+            "base": "CodeSystem-radiation-therapy-relation.html"
+        },
+				"ValueSet/radiation-therapy-relation": {
+            "base": "ValueSet-radiation-therapy-relation.html"
+        },
+
+				"CodeSystem/count-units": {
+						"base": "CodeSystem-count-units.html"
+				},
+				"ValueSet/count-units": {
+						"base": "ValueSet-count-units.html"
+				},
+
+				"CodeSystem/schedule-constraint": {
+						"base": "CodeSystem-schedule-constraint.html"
+				},
+				"ValueSet/schedule-constraint": {
+						"base": "ValueSet-schedule-constraint.html"
+				},
+
+				"CodeSystem/template-relationship": {
+						"base": "CodeSystem-template-relationship.html"
+				},
+				"ValueSet/template-relationship": {
+						"base": "template-relationship.html"
+				},
+
+				"ValueSet/iv-administration-methods": {
+						"base": "iv-administration-methods.html"
+				},
+
+
+        "StructureDefinition/order-template": {
+            "base": "StructureDefinition-order-template.html"
+        },
+        "StructureDefinition/regimen-entry-template": {
+            "base": "StructureDefinition-regimen-entry-template.html"
+        },
+
+        "StructureDefinition/template-note": {
+            "base": "StructureDefinition-template-note.html"
+        },
+        "StructureDefinition/regimenReferenceType": {
+            "base": "StructureDefinition-regimenReferenceType.html"
+        },
+        "StructureDefinition/daysOfCycle": {
+            "base": "StructureDefinition-daysOfCycle.html"
+        },
+        "StructureDefinition/febrileNeutropeniaRisk": {
+            "base": "StructureDefinition-febrileNeutropeniaRisk.html"
+        },
+        "StructureDefinition/emeticRisk": {
+            "base": "StructureDefinition-emeticRisk.html"
+        },
+        "StructureDefinition/alternatingWith": {
+            "base": "StructureDefinition-alternatingWith.html"
+        },
+        "StructureDefinition/fullyStructured": {
+            "base": "StructureDefinition-fullyStructured.html"
+        },
+        "StructureDefinition/actionPlaceholder": {
+            "base": "StructureDefinition-actionPlaceholder.html"
+        },
+        "StructureDefinition/radiationTherapyRelation": {
+            "base": "StructureDefinition-radiationTherapyRelation.html"
+        },
+        "StructureDefinition/weeksOn": {
+            "base": "StructureDefinition-weeksOn.html"
+        },
+        "StructureDefinition/weeksOff": {
+            "base": "StructureDefinition-weeksOff.html"
+        },
+        "StructureDefinition/countUnits": {
+            "base": "StructureDefinition-countUnits.html"
+        },
+        "StructureDefinition/split": {
+            "base": "StructureDefinition-split.html"
+        },
+        "StructureDefinition/cycleConstraint": {
+            "base": "StructureDefinition-cycleConstraint.html"
+        },
+        "StructureDefinition/dayConstraint": {
+            "base": "StructureDefinition-dayConstraint.html"
+        },
+        "StructureDefinition/weekConstraint": {
+            "base": "StructureDefinition-weekConstraint.html"
+        },
+        "StructureDefinition/monthConstraint": {
+            "base": "StructureDefinition-monthConstraint.html"
+        },
+        "StructureDefinition/scheduleConstraint-beginningWith-cycle": {
+            "base": "StructureDefinition-scheduleConstraint-beginningWith-cycle.html"
+        },
+        "StructureDefinition/scheduleConstraint-beginningWith-day": {
+            "base": "StructureDefinition-scheduleConstraint-beginningWith-day.html"
+        },
+        "StructureDefinition/scheduleConstraint-beginningWith-week": {
+            "base": "StructureDefinition-scheduleConstraint-beginningWith-week.html"
+        },
+        "StructureDefinition/scheduleConstraint-beginningWith-month": {
+            "base": "StructureDefinition-scheduleConstraint-beginningWith-month.html"
+        },
+        "StructureDefinition/scheduleConstraint-advanced": {
+            "base": "StructureDefinition-scheduleConstraint-advanced.html"
+        },
+        "StructureDefinition/dividedDoses": {
+            "base": "StructureDefinition-dividedDoses.html"
+        },
+        "StructureDefinition/templateRelationship": {
+            "base": "StructureDefinition-templateRelationship.html"
+        },
+
+				"CapabilityStatement/cott": {
+						"base": "CapabilityStatement-cott.html"
+				}
+    },
+	"canonicalBase": "http://ots.nccn.org/fhir",
+	"spreadsheets": ["plandefinition-order-template-spreadsheet.xml",
+		"activitydefinition-regimen-entry-spreadsheet.xml"],
+	"sct-edition": "http://snomed.info/sct/731000124108",
+	"paths": {
+		"temp": "temp",
+		"resources": ["resources", "examples"],
+		"specification": "http://hl7.org/fhir/STU3",
+		"txCache": "txCache",
+		"qa": "qa",
+		"pages": "pages",
+		"output": "output"
+	},
+	"version": "1.9.0"
+}
