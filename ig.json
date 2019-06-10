@@ -194,12 +194,12 @@
 	"sct-edition": "http://snomed.info/sct/731000124108",
 	"paths": {
 		"temp": "temp",
-		"resources": ["resources", "examples"],
+		"resources":"D:\HL7Tools\publisher\Publish\resources",
 		"specification": "http://hl7.org/fhir/STU3",
 		"txCache": "txCache",
 		"qa": "qa",
 		"pages": "pages",
 		"output": "output"
 	},
-	"version": "1.9.0"
+	"version": "3.0.1"
 }
