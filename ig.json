@@ -194,7 +194,7 @@
 	"sct-edition": "http://snomed.info/sct/731000124108",
 	"paths": {
 		"temp": "temp",
-		"resources":"D:\HL7Tools\publisher\Publish\resources",
+		"resources":"resources",
 		"specification": "http://hl7.org/fhir/STU3",
 		"txCache": "txCache",
 		"qa": "qa",
