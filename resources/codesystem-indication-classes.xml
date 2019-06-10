@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="indication-classes"/>
+  <url value="http://nccn.org/fhir/CodeSystem/indication-classes"/>
+  <version value="1.0.0"/>
+  <name value="Indication Classes"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2017-04-05T12:40:16-04:00"/>
+  <contact>
+		<telecom>
+			<system value="url"/>
+			<value value="https://www.nccn.org/about/contact.aspx"/>
+		</telecom>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 2156900300"/>
+		</telecom>
+	</contact>
+  <description value="A classification system for indications that appear within the NCCN Chemotherapy Order Templates"/>
+  <caseSensitive value="true"/>
+  <valueSet value="http://nccn.org/fhir/ValueSet/indication-classes"/>
+  <content value="complete"/>
+  <concept>
+    <code value="treatmentSetting"/>
+    <display value="treatment setting"/>
+    <definition value="The context of treatment (e.g. treatment setting, disease status, stage, or phase)"/>
+  </concept>
+  <concept>
+    <code value="disease-or-histology"/>
+    <display value="disease or histology"/>
+    <definition value="Disease or disease subtype and/or cancer type"/>
+  </concept>
+  <concept>
+    <code value="patientStatus"/>
+    <display value="patient status"/>
+    <definition value="Patient attributes such as comorbidities, age, or prior treatment"/>
+  </concept>
+  <concept>
+    <code value="molecularMarker"/>
+    <display value="molecular marker"/>
+    <definition value="Biomarkers/genetics, molecular characteristic, or risk group"/>
+  </concept>
+</CodeSystem>

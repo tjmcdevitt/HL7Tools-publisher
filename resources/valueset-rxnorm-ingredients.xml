@@ -1,0 +1,31 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="rxnorm-ingredients"/>
+  <url value="http://nccn.org/fhir/ValueSet/rxnorm-ingredients"/>
+  <version value="1.0.0"/>
+  <name value="RxNorm Ingredients"/>
+  <status value="active"/>
+  <publisher value="National Comprehensive Cancer Network"/>
+  <contact>
+		<telecom>
+			<system value="url"/>
+			<value value="https://www.nccn.org/about/contact.aspx"/>
+		</telecom>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 2156900300"/>
+		</telecom>
+	</contact>
+  <description
+      value="All RxNorm codes whose Term Type is IN (ingredient), PIN (precise ingredient), or MIN (multiple ingredients)"/>
+  <copyright value="All rights reserved."/>
+  <compose>
+    <include>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <filter>
+        <property value="TTY"/>
+        <op value="in"/>
+        <value value="IN,PIN,MIN"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

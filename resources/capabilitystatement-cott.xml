@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	  <id value="cott"/>
+	  <url value="http://nccn.org/fhir/CapabilityStatement/cott"/>
+	  <version value="0.0.1"/>
+	  <title value="NCCN Chemotherapy Order Template Tool Conformance Statement"/>
+	  <status value="active"/>
+	  <experimental value="true"/>
+	  <date value="2017-04-10"/>
+		<publisher value="National Comprehensive Cancer Network"/>
+		<contact>
+			<telecom>
+				<system value="url"/>
+				<value value="https://www.nccn.org/about/contact.aspx"/>
+			</telecom>
+			<telecom>
+				<system value="phone"/>
+				<value value="+1 2156900300"/>
+			</telecom>
+		</contact>
+	  <kind value="instance"/>
+	  <software>
+	    <name value="NCCN Chemotherapy Order Template Tool"/>
+	  </software>
+	  <fhirVersion value="3.0.0"/>
+	  <acceptUnknown value="no"/>
+	  <format value="xml"/>
+	  <format value="json"/>
+	  <rest>
+	    <mode value="server"/>
+	    <documentation value="This simple FHIR server implements only the read, vread, and history interactions for the PlanDefinition Resource.
+	      Each operation is protected via an HTTP token key that must be provided as a query parameter with each request.
+	      Please contact NCCN for requesting access to the server."/>
+	    <security>
+	      <!-- we should add CORS headers to support browser-based clients -->
+	      <cors value="true"/>
+	      <description value="This server is read-only and supports SSL (HTTPS)"/>
+	    </security>
+	    <resource>
+	      <type value="PlanDefinition"/>
+	      <profile>
+	        <reference value="http://nccn.org/fhir/StructureDefinition/order-template"/>
+	      </profile>
+	      <interaction>
+	        <code value="read"/>
+	        <documentation value="Implemented per the specification"/>
+	      </interaction>
+	      <interaction>
+	        <code value="vread"/>
+	        <documentation value="Implemented per the specification"/>
+	      </interaction>
+	      <interaction>
+	        <code value="history-instance"/>
+	        <documentation value="Implemented per the specification"/>
+	      </interaction>
+	      <interaction>
+	        <code value="history-type"/>
+	        <documentation value="Implemented per the specification"/>
+	      </interaction>
+				<!-- TODO support FHIR search -->
+				<!--<interaction>
+	        <code value="search-type"/>
+	        <documentation value="Implemented per the specification"/>
+	      </interaction> -->
+
+				<versioning value="versioned" />
+		    <readHistory value="true" />
+
+		    <!-- TODO work to enable this -->
+		    <!-- <conditionalRead value="modified-since" /> -->
+
+				<!-- TODO support FHIR search -->
+				<!--
+	      <searchParam>
+	        <name value="identifier"/>
+	        <definition value="http://hl7.org/fhir/SearchParameter/plandefinition-identifier"/>
+	        <type value="token"/>
+	        <documentation value="Logical identifier for the module (e.g. BRS1)"/>
+	      </searchParam>
+	      <searchParam>
+	        <name value="title"/>
+	        <definition value="http://hl7.org/fhir/SearchParameter/plandefinition-title"/>
+	        <type value="string"/>
+	        <documentation value="Text search against the title"/>
+	      </searchParam>
+	      <searchParam>
+	        <name value="version"/>
+	        <definition value="http://hl7.org/fhir/SearchParameter/plandefinition-version"/>
+	        <type value="string"/>
+	        <documentation value="Version of the module (e.g. 1.0.0)"/>
+	      </searchParam>-->
+	    </resource>
+	  </rest>
+	</CapabilityStatement>
