@@ -104,8 +104,8 @@
 				},
 
 
-        "StructureDefinition/order-template": {
-            "base": "StructureDefinition-order-template.html"
+        "StructureDefinition/ordertemplate": {
+            "base": "StructureDefinition-ordertemplate.html"
         },
         "StructureDefinition/regimen-entry-template": {
             "base": "StructureDefinition-regimen-entry-template.html"
@@ -188,7 +188,7 @@
 						"base": "CapabilityStatement-cott.html"
 				}
     },
-	"canonicalBase": "http://ots.nccn.org/fhir",
+	"canonicalBase": "http://ots.nccn.org/fhirhl7",
 	"spreadsheets": ["plandefinition-order-template-spreadsheet.xml",
 		"activitydefinition-regimen-entry-spreadsheet.xml"],
 	"sct-edition": "http://snomed.info/sct/731000124108",
@@ -201,5 +201,7 @@
 		"pages": "pages",
 		"output": "output"
 	},
+	"npm-name": "COTT.hl7.fhir.nccn",
+	"license": "not-open-source",
 	"version": "3.0.1"
 }
