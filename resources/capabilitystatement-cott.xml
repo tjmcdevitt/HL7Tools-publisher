@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	  <id value="cott"/>
-	  <url value="http://nccn.org/fhir/CapabilityStatement/cott"/>
+	  <url value="http://ots.nccn.org/fhirhl7/CapabilityStatement/cott"/>
 	  <version value="0.0.1"/>
 	  <title value="NCCN Chemotherapy Order Template Tool Conformance Statement"/>
 	  <status value="active"/>
@@ -39,7 +39,7 @@
 	    <resource>
 	      <type value="PlanDefinition"/>
 	      <profile>
-	        <reference value="http://nccn.org/fhir/StructureDefinition/order-template"/>
+	        <reference value="http://nccn.org/fhir/StructureDefinition/ordertemplate"/>
 	      </profile>
 	      <interaction>
 	        <code value="read"/>

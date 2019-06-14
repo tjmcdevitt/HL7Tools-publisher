@@ -3,9 +3,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="daysOfCycle"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <a href="http://nccn.org/fhir/StructureDefinition/daysOfCycle">http://nccn.org/fhir/StructureDefinition/daysOfCycle</a></p><p><b>name</b>: Days of cycle</p><p><b>title</b>: Days of cycle</p><p><b>status</b>: DRAFT</p><p><b>date</b>: Aug 1, 2016</p><p><b>publisher</b>: The National Comprehensive Cancer Network</p><p><b>contact</b>: </p><p><b>description</b>: Days of a possibly repeating cycle on which the agent is to be administered.</p><p><b>url</b>: <a href="http://nccn.org/fhir/StructureDefinition/daysOfCycle">http://nccn.org/fhir/StructureDefinition/daysOfCycle</a></p><p><b>name</b>: Days of cycle</p><p><b>title</b>: Days of cycle</p><p><b>status</b>: DRAFT</p><p><b>date</b>: Aug 1, 2016</p><p><b>publisher</b>: The National Comprehensive Cancer Network</p><p><b>contact</b>: </p><p><b>description</b>: Days of a possibly repeating cycle on which the agent is to be administered.</p><p><b>fhirVersion</b>: 1.9.0</p><h3>Mappings</h3><table class="grid"><tr><td>-</td><td><b>Identity</b></td><td><b>Uri</b></td><td><b>Name</b></td></tr><tr><td>*</td><td>rim</td><td><a href="http://hl7.org/v3">http://hl7.org/v3</a></td><td>RIM Mapping</td></tr></table><p><b>kind</b>: COMPLEXTYPE</p><p><b>abstract</b>: false</p><p><b>contextType</b>: DATATYPE</p><p><b>context</b>: Timing</p><p><b>type</b>: Extension</p><p><b>baseDefinition</b>: <a href="http://hl7.org/fhir/StructureDefinition/Extension">http://hl7.org/fhir/StructureDefinition/Extension</a></p><p><b>derivation</b>: CONSTRAINT</p><h3>Snapshots</h3><table class="grid"><tr><td>-</td><td><b>Element</b></td></tr><tr><td>*</td><td>todo-bundle</td></tr></table><h3>Differentials</h3><table class="grid"><tr><td>-</td><td><b>Element</b></td></tr><tr><td>*</td><td>todo-bundle</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <a href="http://ots.nccn.org/fhirhl7/StructureDefinition/daysOfCycle">http://ots.nccn.org/fhirhl7/StructureDefinition/daysOfCycle</a></p><p><b>name</b>: Days of cycle</p><p><b>title</b>: Days of cycle</p><p><b>status</b>: DRAFT</p><p><b>date</b>: Aug 1, 2016</p><p><b>publisher</b>: The National Comprehensive Cancer Network</p><p><b>contact</b>: </p><p><b>description</b>: Days of a possibly repeating cycle on which the agent is to be administered.</p><p><b>url</b>: <a href="http://ots.nccn.org/fhirhl7/StructureDefinition/daysOfCycle">http://ots.nccn.org/fhirhl7/StructureDefinition/daysOfCycle</a></p><p><b>name</b>: Days of cycle</p><p><b>title</b>: Days of cycle</p><p><b>status</b>: DRAFT</p><p><b>date</b>: Aug 1, 2016</p><p><b>publisher</b>: The National Comprehensive Cancer Network</p><p><b>contact</b>: </p><p><b>description</b>: Days of a possibly repeating cycle on which the agent is to be administered.</p><p><b>fhirVersion</b>: 1.9.0</p><h3>Mappings</h3><table class="grid"><tr><td>-</td><td><b>Identity</b></td><td><b>Uri</b></td><td><b>Name</b></td></tr><tr><td>*</td><td>rim</td><td><a href="http://hl7.org/v3">http://hl7.org/v3</a></td><td>RIM Mapping</td></tr></table><p><b>kind</b>: COMPLEXTYPE</p><p><b>abstract</b>: false</p><p><b>contextType</b>: DATATYPE</p><p><b>context</b>: Timing</p><p><b>type</b>: Extension</p><p><b>baseDefinition</b>: <a href="http://hl7.org/fhir/StructureDefinition/Extension">http://hl7.org/fhir/StructureDefinition/Extension</a></p><p><b>derivation</b>: CONSTRAINT</p><h3>Snapshots</h3><table class="grid"><tr><td>-</td><td><b>Element</b></td></tr><tr><td>*</td><td>todo-bundle</td></tr></table><h3>Differentials</h3><table class="grid"><tr><td>-</td><td><b>Element</b></td></tr><tr><td>*</td><td>todo-bundle</td></tr></table></div>
   </text>
-  <url value="http://nccn.org/fhir/StructureDefinition/daysOfCycle"/>
+  <url value="http://ots.nccn.org/fhirhl7/StructureDefinition/daysOfCycle"/>
   <name value="Days of cycle"/>
   <title value="Days of cycle"/>
   <status value="draft"/>
@@ -198,7 +198,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://nccn.org/fhir/StructureDefinition/daysOfCycle"/>
+      <fixedUri value="http://ots.nccn.org/fhirhl7/StructureDefinition/daysOfCycle"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -368,7 +368,7 @@
     </element>
     <element id="Extension:daysofcycle.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://nccn.org/fhir/StructureDefinition/daysOfCycle"/>
+      <fixedUri value="http://ots.nccn.org/fhirHL7/StructureDefinition/daysOfCycle"/>
     </element>
     <element id="Extension:daysofcycle.value[x]">
       <path value="Extension.value[x]"/>

@@ -1,0 +1,53 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "ig",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "D:\\HL7Tools\\publisher\\Publish\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "D:\\HL7Tools\\publisher\\Publish\\pages"
+  }],
+  "url" : "http://ots.nccn.org/fhirhl7/ImplementationGuide/ig",
+  "name" : "Implementation Guide Template",
+  "status" : "active",
+  "experimental" : true,
+  "publisher" : "NCCN",
+  "packageId" : "COTT.hl7.fhir.nccn",
+  "license" : "not-open-source",
+  "fhirVersion" : ["3.0.1"],
+  "definition" : {
+    "grouping" : [{
+      "id" : "p1",
+      "name" : "base"
+    }],
+    "resource" : [{
+      "reference" : {
+        "reference" : "PlanDefinition/KDN5"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CapabilityStatement/cott"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    }],
+    "page" : {
+      "nameUrl" : "index.html",
+      "title" : "blah",
+      "generation" : "html"
+    },
+    "parameter" : [{
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    }]
+  }
+}

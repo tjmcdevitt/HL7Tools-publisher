@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="D:\HL7Tools\publisher\Publish\resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="D:\HL7Tools\publisher\Publish\pages"/>
+  </extension>
+  <url value="http://ots.nccn.org/fhirhl7/ImplementationGuide/ig"/>
+  <name value="Implementation Guide Template"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <publisher value="NCCN"/>
+  <packageId value="COTT.hl7.fhir.nccn"/>
+  <license value="not-open-source"/>
+  <fhirVersion value="3.0.1"/>
+  <definition>
+    <grouping id="p1">
+      <name value="base"/>
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="PlanDefinition/KDN5"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/cott"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="blah"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

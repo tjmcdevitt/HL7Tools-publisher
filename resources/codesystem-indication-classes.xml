@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="indication-classes"/>
-  <url value="http://nccn.org/fhir/CodeSystem/indication-classes"/>
+  <url value="http://ots.nccn.org/fhirhl7/CodeSystem/indication-classes"/>
   <version value="1.0.0"/>
   <name value="Indication Classes"/>
   <status value="active"/>
@@ -19,7 +19,7 @@
 	</contact>
   <description value="A classification system for indications that appear within the NCCN Chemotherapy Order Templates"/>
   <caseSensitive value="true"/>
-  <valueSet value="http://nccn.org/fhir/ValueSet/indication-classes"/>
+  <valueSet value="http://ots.nccn.org/fhirhl7/ValueSet/indication-classes"/>
   <content value="complete"/>
   <concept>
     <code value="treatmentSetting"/>
